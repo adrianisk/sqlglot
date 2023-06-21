@@ -145,7 +145,7 @@ def lineage(
 
         return node
 
-    return to_node(column if isinstance(column, str) else column.name, scope)
+    return to_node(column if isinstance(column, str) else column.alias_or_name, scope)
 
 
 class LineageHTML:
